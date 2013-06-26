@@ -79,6 +79,7 @@ static supported_device supported_devices[] = {
   { DEVICE_NEXUS4_JDQ39,          0xc0ef72f0 },
   { DEVICE_NEXUS_JOP40C,          0xc08b5344 },
   { DEVICE_NEC_101T, 0xc02c6da8 },
+  { DEVICE_NEXUS_JZO54K, 0xc08b3224 },
 };
 
 static int n_supported_devices = sizeof(supported_devices) / sizeof(supported_devices[0]);
