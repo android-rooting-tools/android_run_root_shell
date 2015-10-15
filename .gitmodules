@@ -1,9 +1,9 @@
 [submodule "device_database"]
 	path = device_database
-	url = git://github.com/android-rooting-tools/android_device_database.git
+	url = https://github.com/scoty755/android_device_database.git
 [submodule "libkallsyms"]
 	path = libkallsyms
 	url = https://github.com/android-rooting-tools/libkallsyms.git
 [submodule "libexploit"]
 	path = libexploit
-	url = https://github.com/android-rooting-tools/libexploit.git
+	url = https://github.com/scoty755/libexploit.git

@@ -13,7 +13,7 @@ Building
 	`export PATH=ANDK_DIR:$PATH`
 
 * In another directory clone this repo: 
-	`git clone --recursive https://github.com/android-rooting-tools/android_run_root_shell`
+	`git clone --recursive https://github.com/scoty755/android_run_root_shell.git`
 
 * Change to the directory where the repo was cloned
 	`cd android_run_root_shell`
@@ -22,7 +22,7 @@ Building
 	`ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./Android.mk`
 
 * If all goes well you will get the compiled binary at:
-	`./libs/armeabi/run_root_shell`
+	`./libs/armeabi/run_root_shell` and `./device_database/device.db`
 
 
 Running
@@ -41,10 +41,10 @@ Running
 	`sudo adb start-server`
 
 * Transfer run_root_shell to a temporary directory on the phone:
-	`adb push run_root_shell /data/local`
+	`adb push run_root_shell /data/local/tmp` and `adb push device.db /data/local/tmp`
 
 * Ensure that run_root_shell has execute permissions:
-	`adb shell chmod 777 /data/local/run_root_shell`
+	`adb shell chmod 777 /data/local/tmp/*`
 
 * Run the command on the phone:
-	`adb shell /data/local/run_root_shell`
+	`adb shell /data/local/tmp/run_root_shell`

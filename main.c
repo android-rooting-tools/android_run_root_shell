@@ -300,6 +300,18 @@ bool find_variables_in_memory(void *mem, size_t length)
 }
 
 bool
+try_get_symbol(void)
+{
+    if (get_address()) {
+        return true;
+    }
+    
+    print_reason_device_not_supported();
+    
+    return false;
+}
+
+bool
 setup_variables(void)
 {
   setup_prepare_kernel_cred_address();
@@ -340,6 +352,11 @@ setup_variables(void)
 
   if (!ptmx_fops) {
     printf("Failed to get ptmx_fops address.\n");
+  }
+
+  if (try_get_symbol()) {
+    printf("This device information has been added to the database!\n");
+    printf("Please to retry.\n");
   }
 
   print_reason_device_not_supported();
