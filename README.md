@@ -28,7 +28,7 @@ Building
 Running
 =======
 
-* Download the Android Software Development Kit (SDK) ADT Bundle: http://developer.android.com/sdk/index.html
+* Download the Android Software Development Kit (SDK) ADT Bundle: https://developer.android.com/studio/#downloads
 
 * Extract into some directory and put the platform-tools folder in your path:
 	`export PATH=SDK_DIR/sdk/platform-tools/:$PATH`
