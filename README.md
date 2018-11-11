@@ -18,7 +18,7 @@ Building
 * Change to the directory where the repo was cloned
 	`cd android_run_root_shell`
 
-* To start build process use the following (There is [known issue](https://github.com/android-rooting-tools/android_run_root_shell/issues/35) that might require downloading NDK r10e)
+* To start build process use the following - [known issue](https://github.com/android-rooting-tools/android_run_root_shell/issues/35)
 	`ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./Android.mk`
 
 * If all goes well you will get the compiled binary at:
