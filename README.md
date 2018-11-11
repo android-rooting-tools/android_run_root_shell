@@ -7,7 +7,8 @@ This code is still ugly, please re-write it and send pull-requests, if you want 
 Building
 ========
 
-* Download the Android Native Development Kit (NDK): https://developer.android.com/ndk/downloads/ [known issue](https://github.com/android-rooting-tools/android_run_root_shell/issues/35)
+* Download the Android Native Development Kit (NDK): https://developer.android.com/ndk/downloads/ 
+	* [known issue](https://github.com/android-rooting-tools/android_run_root_shell/issues/35)
 
 * Extract into some directory and put that in your path: 
 	`export PATH=ANDK_DIR:$PATH`
