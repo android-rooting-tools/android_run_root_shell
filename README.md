@@ -8,7 +8,7 @@ Building
 ========
 
 * Download the Android Native Development Kit (NDK): https://developer.android.com/ndk/downloads/ 
-	* A [known issue](https://github.com/android-rooting-tools/android_run_root_shell/issues/35) with some NDKs
+	* There is a [known issue](https://github.com/android-rooting-tools/android_run_root_shell/issues/35) with some NDK versions
 
 * Extract into some directory and put that in your path: 
 	`export PATH=ANDK_DIR:$PATH`
