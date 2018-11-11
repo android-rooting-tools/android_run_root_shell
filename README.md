@@ -7,7 +7,7 @@ This code is still ugly, please re-write it and send pull-requests, if you want 
 Building
 ========
 
-* Download the Android Native Development Kit (NDK): https://developer.android.com/ndk/downloads/
+* Download the Android Native Development Kit (NDK): https://developer.android.com/ndk/downloads/ [known issue](https://github.com/android-rooting-tools/android_run_root_shell/issues/35)
 
 * Extract into some directory and put that in your path: 
 	`export PATH=ANDK_DIR:$PATH`
@@ -18,7 +18,7 @@ Building
 * Change to the directory where the repo was cloned
 	`cd android_run_root_shell`
 
-* To start build process use the following - [known issue](https://github.com/android-rooting-tools/android_run_root_shell/issues/35)
+* To start build process use the following
 	`ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./Android.mk`
 
 * If all goes well you will get the compiled binary at:
