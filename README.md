@@ -7,7 +7,8 @@ This code is still ugly, please re-write it and send pull-requests, if you want 
 Building
 ========
 
-* Download the Android Native Development Kit (NDK): http://developer.android.com/tools/sdk/ndk/index.html#Downloads
+* Download the Android Native Development Kit (NDK): https://developer.android.com/ndk/downloads/ 
+	* There is a [known issue](https://github.com/android-rooting-tools/android_run_root_shell/issues/35) with some NDK versions
 
 * Extract into some directory and put that in your path: 
 	`export PATH=ANDK_DIR:$PATH`
@@ -28,7 +29,7 @@ Building
 Running
 =======
 
-* Download the Android Software Development Kit (SDK) ADT Bundle: http://developer.android.com/sdk/index.html
+* Download the Android Software Development Kit (SDK) ADT Bundle: https://developer.android.com/studio/#downloads
 
 * Extract into some directory and put the platform-tools folder in your path:
 	`export PATH=SDK_DIR/sdk/platform-tools/:$PATH`
